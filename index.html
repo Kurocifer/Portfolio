@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurocifer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#hero" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contributions">Contributions</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <button id="theme-switcher">🌙</button>
+
+    <section id="hero">
+        <canvas id="stars"></canvas>
+        <h1><span id="typewriter"></span></h1>
+        <p>Software Engineer | Systems Programming | Java, Python, Go, JavaScript, Flutter, C, Linux Enthusiast</p>
+    </section>
+
+    <section id="about" class="fade-in">
+        <h2>About Me</h2>
+        <p>Namaste. I'm Tiza, a passionate developer who loves crafting efficient, creative solutions. With expertise in
+            Java, Python, Go, JavaScript frameworks and libraries, Linux, I build everything from desktop apps to
+            decentralized systems. I'm an open-source contributor and thrive on solving complex problems, whether it's
+            optimizing Linux and Neovim workflows or scaling databases. You can find me online as Kurocifer</p>
+    </section>
+
+    <section id="skills" class="fade-in">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1" />
+                    <text x="12" y="16" font-size="12" font-weight="bold" text-anchor="middle"
+                        fill="currentColor">J</text>
+                </svg>
+                <span>Java</span>
+                <div class="tooltip">Built JavaFX apps, server-side REST APIs and blockchain prototypes</div>
+            </div>
+            <div class="skill-item">
+                <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1" />
+                    <text x="12" y="16" font-size="12" font-weight="bold" text-anchor="middle"
+                        fill="currentColor">P</text>
+                </svg>
+                <span>Python</span>
+                <div class="tooltip">Developed CLI tools and games</div>
+            </div>
+            <div class="skill-item">
+                <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1" />
+                    <text x="12" y="16" font-size="12" font-weight="bold" text-anchor="middle"
+                        fill="currentColor">R</text>
+                </svg>
+                <span>React</span>
+                <div class="tooltip">Crafted interactive dashboards and UIs</div>
+            </div>
+            <div class="skill-item">
+                <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1" />
+                    <text x="12" y="16" font-size="12" font-weight="bold" text-anchor="middle"
+                        fill="currentColor">N</text>
+                </svg>
+                <span>Node.js</span>
+                <div class="tooltip">Built server-side APIs and backends</div>
+            </div>
+            <div class="skill-item">
+                <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1" />
+                    <text x="12" y="16" font-size="12" font-weight="bold" text-anchor="middle"
+                        fill="currentColor">G</text>
+                </svg>
+                <span>Go</span>
+                <div class="tooltip">Explored systems programming and CLI tools</div>
+            </div>
+            <div class="skill-item">
+                <svg viewBox="0 0 24 24">
+                    <path d="M3 3v18h18V3H3zm16 16H5V5h14v14zM7 7h10v2H7V7zm0 4h10v2H7v-2zm0 4h7v2H7v-2z" />
+                </svg>
+                <span>Linux</span>
+                <div class="tooltip">Optimized workflows with Ubuntu and Neovim</div>
+            </div>
+            <div class="skill-item">
+                <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1" />
+                    <text x="12" y="16" font-size="12" font-weight="bold" text-anchor="middle"
+                        fill="currentColor">F</text>
+                </svg>
+                <span>Flutter</span>
+                <div class="tooltip">Built cross-platform P2P file-sharing apps</div>
+            </div>
+            <div class="skill-item">
+                <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1" />
+                    <text x="12" y="16" font-size="12" font-weight="bold" text-anchor="middle"
+                        fill="currentColor">C</text>
+                </svg>
+                <span>C</span>
+                <div class="tooltip">Developed low-level systems and utilities</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="fade-in">
+        <h2>Projects</h2>
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="java">Java</button>
+            <button class="filter-btn" data-filter="python">Python</button>
+            <button class="filter-btn" data-filter="javascript">JavaScript</button>
+            <button class="filter-btn" data-filter="flutter">Flutter</button>
+            <button class="filter-btn" data-filter="bash">Bash</button>
+        </div>
+        <div class="project-grid">
+            <div class="project-card" data-category="java">
+                <h3>Palimpsest</h3>
+                <p>A clipboard history tracker with system tray integration and JSON persistence.</p>
+            </div>
+            <div class="project-card" data-category="javascript">
+                <h3>Car Tracking System</h3>
+                <p>A system for tracking vehicle locations and statuses in real time.</p>
+            </div>
+            <div class="project-card" data-category="flutter">
+                <h3>P2P File Sharing</h3>
+                <p>A decentralized cross platform desktop app for efficient peer-to-peer file transfers.</p>
+            </div>
+            <div class="project-card" data-category="bash">
+                <h3>User Onboarding System</h3>
+                <p>A guided workflow system for seamless user onboarding and account management on Linux systems.</p>
+            </div>
+            <div class="project-card" data-category="python">
+                <h3>Kodex</h3>
+                <p>A CLI tool to analyze programming languages in a directory.</p>
+            </div>
+            <div class="project-card" data-category="java">
+                <h3>JakushaChain</h3>
+                <p>A blockchain prototype for decentralized data management.</p>
+            </div>
+            <div class="project-card" data-category="java">
+                <h3>Java Breakout</h3>
+                <p>A classic Breakout game with paddle-ball mechanics.</p>
+            </div>
+            <div class="project-card" data-category="java">
+                <h3>Sudoku Desktop</h3>
+                <p>A desktop Sudoku game with a user-friendly interface.</p>
+            </div>
+            <div class="project-card" data-category="java">
+                <h3>E-Commerce Backend</h3>
+                <p>A backend for managing products, users, and transactions.</p>
+            </div>
+            <div class="project-card" data-category="java">
+                <h3>Passdagon</h3>
+                <p>A secure password management and generation tool.</p>
+            </div>
+            <div class="project-card" data-category="python">
+                <h3>Alien Invasion</h3>
+                <p>An arcade-style game where players shoot waves of alien invaders.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contributions" class="fade-in">
+        <h2>Open-Source Contributions</h2>
+        <div class="contribution-grid">
+            <div class="contribution-card">
+                <h3>OpenRefine #6537</h3>
+                <p>Fixed a bug in OpenRefine’s data processing pipeline, improving CSV parsing accuracy.</p>
+                <p><a href="https://github.com/OpenRefine/OpenRefine/pull/6537" target="_blank">View PR</a></p>
+            </div>
+            <div class="contribution-card">
+                <h3>OpenRefine #6708</h3>
+                <p>Enhanced OpenRefine’s UI with accessibility improvements for better user interaction.</p>
+                <p><a href="https://github.com/OpenRefine/OpenRefine/pull/6708" target="_blank">View PR</a></p>
+            </div>
+            <div class="contribution-card">
+                <h3>pomanalyzer #6</h3>
+                <p>Introduced a notif package for notifications with sound alerts across Linux, macOS, and Windows.</p>
+                <p><a href="https://github.com/xasterKies/pomanalyzer/pull/6" target="_blank">View PR</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="fade-in">
+        <h2>Contact</h2>
+        <a href="resume.pdf" download class="resume-btn">Download Resume</a>
+        <div class="social-links">
+            <a href="https://github.com/Kurocifer" target="_blank" class="social-btn">
+                <svg viewBox="0 0 24 24" class="social-icon">
+                    <path
+                        d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.66-.22.66-.49v-1.7c-2.78.61-3.37-1.34-3.37-1.34-.46-1.16-1.12-1.47-1.12-1.47-.91-.62.07-.61.07-.61 1.01.07 1.54 1.04 1.54 1.04.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.64-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.03A9.56 9.56 0 0112 6.8c.85 0 1.71.11 2.51.33 1.91-1.3 2.75-1.03 2.75-1.03.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.16.58.67.49A10.01 10.01 0 0022 12c0-5.52-4.48-10-10-10z" />
+                </svg>
+                GitHub
+            </a>
+            <a href="https://linkedin.com/in/tiza-kurocifer" target="_blank" class="social-btn">
+                <svg viewBox="0 0 24 24" class="social-icon">
+                    <path
+                        d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zM8.5 18H6.75V10.5H8.5V18zM7.625 9.5a1.375 1.375 0 110-2.75 1.375 1.375 0 010 2.75zM18 18h-1.75v-4.25c0-1.03-.84-1.87-1.87-1.87s-1.87.84-1.87 1.87V18H10.75V10.5h1.75v1.03c.52-.8 1.45-1.28 2.37-1.28 1.85 0 3.38 1.5 3.38 3.35V18z" />
+                </svg>
+                LinkedIn
+            </a>
+        </div>
+    </section>
+
+    <div class="modal" id="project-modal">
+        <div class="modal-content">
+            <span class="close">×</span>
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+            <p id="modal-tech"></p>
+            <p id="modal-link"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

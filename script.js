@@ -171,20 +171,20 @@ const projectData = {
         tech: 'Tech: Java, JavaFX 24, JSON',
         link: 'https://github.com/Kurocifer/Palimpsest'
     },
-    'Car Tracking System': {
-        description: 'A system for tracking vehicle locations and statuses, designed for real-time data processing and monitoring, and can be used for fleet management',
+    'CarTrace': {
+        description: 'A system for tracking vehicle locations and statuses, designed for real-time data processing and monitoring, and can be used for fleet management.',
         tech: 'Tech: JavaScript, React, Node.js, Express.js, MongoDB',
-        link: 'https://github.com/Kurocifer/car-tracking-system'
+        link: 'https://github.com/Kurocifer/cartrace'
     },
-    'P2P File Sharing': {
+    'AkefalosShare': {
         description: 'A decentralized cross platform desktop app for efficient peer-to-peer file transfers.',
         tech: 'Tech: Flutter, Dart',
-        link: 'https://github.com/Kurocifer/p2p_file_sharing'
+        link: 'https://github.com/Kurocifer/AkefalosShare'
     },
-    'User Onboarding System': {
+    'Onboarder': {
         description: 'A guided workflow system to streamline user onboarding on Linux systems permitting seemless management of different user accounts.',
         tech: 'Tech: Bash',
-        link: 'https://github.com/Kurocifer/user-onboarding-system'
+        link: 'https://github.com/Kurocifer/Onboarder'
     },
     'Kodex': {
         description: 'A command-line tool to analyze programming languages in a directory, calculating file counts and percentages.',
@@ -206,10 +206,10 @@ const projectData = {
         tech: 'Tech: Java, JavaFX',
         link: 'https://github.com/Kurocifer/SudokuDesktop'
     },
-    'E-Commerce Backend': {
+    'LazyShop-API': {
         description: 'A robust backend for an e-commerce platform, managing products, users, and transactions.',
         tech: 'Tech: Java, Spring Boot',
-        link: 'https://github.com/Kurocifer/E-Commerce-Backend'
+        link: 'https://github.com/Kurocifer/LazyShop-API'
     },
     'Passdagon': {
         description: 'A secure tool for password management and generation, with a focus on encryption.',

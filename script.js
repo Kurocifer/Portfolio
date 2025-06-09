@@ -176,6 +176,11 @@ const projectData = {
         tech: 'Tech: JavaScript, React, Node.js, Express.js, MongoDB',
         link: 'https://github.com/Kurocifer/cartrace'
     },
+    'NetPulse': {
+        description: 'A cross platform QoE network monitoring solution, featuring a mobile app for network users to view their netwrok performance submit network metrics and ratings feedbacks, and a web based dashboard for internet service providers permitting detaily analyze this submitted feedbacks and metrics.',
+        tech: 'Tech: Flutter, React, JavaScript, Supabase',
+        link: 'https://github.com/Kurocifer/NetPulse'
+    },
     'AkefalosShare': {
         description: 'A decentralized cross platform desktop app for efficient peer-to-peer file transfers.',
         tech: 'Tech: Flutter, Dart',

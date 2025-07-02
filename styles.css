@@ -230,6 +230,8 @@ h2 {
     border-radius: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
+    position: relative;
+    min-height: 200px; /* Ensure space for the fixed link */
 }
 
 .project-card:hover {
@@ -238,18 +240,20 @@ h2 {
 }
 
 .project-card h3 {
-    font-size: 1.5rem;
+    font-size: 1.5rem.5rem;
     margin-bottom: 1rem;
 }
 
 .project-card p {
     font-size: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2.5rem; /* Increased to prevent overlap with fixed link */
 }
 
 .project-card .view-details {
     font-size: 1rem;
-    display: inline-block;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
 }
 
 /* Contributions */

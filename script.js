@@ -157,6 +157,14 @@ filterButtons.forEach(button => {
     });
 });
 
+// Prevent default behavior for View Details links
+const viewDetailsLinks = document.querySelectorAll('.view-details');
+viewDetailsLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+    });
+});
+
 // Project Modals
 const modal = document.getElementById('project-modal');
 const modalTitle = document.getElementById('modal-title');

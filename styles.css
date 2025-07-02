@@ -244,6 +244,12 @@ h2 {
 
 .project-card p {
     font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.project-card .view-details {
+    font-size: 1rem;
+    display: inline-block;
 }
 
 /* Contributions */
